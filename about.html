@@ -1,124 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me - Suraj Yadav</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0e0e0e;
-      color: #ffffff;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About-Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    .about-section {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 80px 20px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .about-img {
-      flex: 1;
-      min-width: 300px;
-      padding: 20px;
-    }
-
-    .about-img img {
-      width: 100%;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    }
-
-    .about-text {
-      flex: 2;
-      padding: 20px;
-    }
-
-    .about-text h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      color: #ffaa00;
-    }
-
-    .about-text p {
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 25px;
-      color: #dcdcdc;
-    }
-
-    .info-list {
-      list-style: none;
-      padding: 0;
-    }
-
-    .info-list li {
-      margin-bottom: 10px;
-      font-size: 16px;
-    }
-
-    .highlight {
-      color: #ffaa00;
-      font-weight: bold;
-    }
-
-    .download-btn {
-      display: inline-block;
-      padding: 12px 24px;
-      margin-top: 25px;
-      background-color: #ffaa00;
-      color: #000;
-      font-weight: bold;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .download-btn:hover {
-      background-color: #e69900;
-    }
-
-    @media screen and (max-width: 768px) {
-      .about-section {
-        flex-direction: column;
-      }
-
-      .about-text {
-        text-align: center;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+             <!-- Header Section -->
+<header class="header">
+  <nav class="navbar">
+    <div class="logo"> <a href="./index.html">&lt;/Suraj&gt;</a></div>
 
-  <section class="about-section" id="about">
-    <div class="about-img">
-      <img src="./ppic.png" alt="Suraj Yadav" />
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="mailto:yadavsuraj120415@gmail.com" class="nav-btn">Let’s Talk</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<main class="page-content">
+
+  <section class="about-wrapper">
+    <div class="about-heading">
+      <h1>About Me</h1>
+      <p>Know more about who I am</p>
     </div>
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        Hello! I'm <span class="highlight">Suraj Yadav</span>, currently pursuing BSc.IT at LBEF College, Kathmandu, affiliated with Asia Pacific University. I'm passionate about technology, coding, and growing my skills in the world of IT.
-      </p>
-      <ul class="info-list">
-        <li><span class="highlight">Name:</span> Suraj Yadav</li>
-        <li><span class="highlight">Date of Birth:</span> 2063-01-03</li>
-        <li><span class="highlight">Address:</span> Saptari, Nepal</li>
-        <li><span class="highlight">Email:</span> yadavsuraj120415@gmail.com</li>
-        <li><span class="highlight">Phone:</span> +977-9816386970</li>
-        <!-- <li><span class="highlight">Projects Completed:</span> + Projects</li> -->
-      </ul>
-      <a href="./Suraj.pdf.pdf" class="download-btn">Download CV</a>
+
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="./ppic.png" alt="Suraj Yadav">
+      </div>
+
+      <div class="about-details">
+        <h2>Hello, I'm Suraj 👋</h2>
+
+        <p>
+          I’m <strong>Suraj Yadav</strong>, a BSc.IT student at LBEF College,
+          affiliated with Asia Pacific University. I love building modern,
+          clean and functional digital experiences.
+        </p>
+
+        <p>
+          My interests include <strong>Web Development</strong>,
+          <strong>Ethical Hacking</strong>, Networking, Digital Marketing and IT systems.
+        </p>
+
+        <div class="about-info">
+          <div><span>Name:</span> Suraj Yadav</div>
+          <div><span>DOB:</span> 2063-01-03</div>
+          <div><span>Address:</span> Saptari, Nepal</div>
+          <div><span>Email:</span> yadavsuraj120415@gmail.com</div>
+          <div><span>Phone:</span> +977-9816386970</div>
+          <div><span>Education:</span> BSc.IT</div>
+        </div>
+
+        <a href="./Suraj.pdf.pdf" class="primary-btn">Download CV</a>
+      </div>
     </div>
   </section>
+
+</main>
+
+
+
+ <!-- Fotter section -->
+
+<footer class="site-footer">
+  <p>© 2026 Suraj Yadav. All Rights Reserved.</p>
+</footer>
+
 
 </body>
 </html>
